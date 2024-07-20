@@ -35,7 +35,11 @@ public class ForgeMetalDetectorEvent {
 
     private static final TagKey<Block> DETECTABLE_BLOCKS = BlockTags.create(new ResourceLocation(MetalDetectors.MODID, "detectable_blocks"));
 
-    private static final Item SIMPLE_METAL_DETECTOR = MetalDetectors.SIMPLE_METAL_DETECTOR.get();
+    private static Item SIMPLE_METAL_DETECTOR;
+
+    public ForgeMetalDetectorEvent() {
+        SIMPLE_METAL_DETECTOR = MetalDetectors.SIMPLE_METAL_DETECTOR.get();
+    }
 
     @SubscribeEvent
     public void onPlayerTick(TickEvent.PlayerTickEvent e) {
