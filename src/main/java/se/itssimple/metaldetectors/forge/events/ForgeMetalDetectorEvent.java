@@ -7,6 +7,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
@@ -34,19 +35,21 @@ public class ForgeMetalDetectorEvent {
 
     private static final TagKey<Block> DETECTABLE_BLOCKS = BlockTags.create(new ResourceLocation(MetalDetectors.MODID, "detectable_blocks"));
 
+    private static final Item SIMPLE_METAL_DETECTOR = MetalDetectors.SIMPLE_METAL_DETECTOR.get();
+
     @SubscribeEvent
     public void onPlayerTick(TickEvent.PlayerTickEvent e) {
         var player = e.player;
         var level = player.level();
 
         if(level.isClientSide && e.phase.equals(TickEvent.Phase.START)
-                && e.side.isClient() && e.player.tickCount % EVENT_TICKS == 0) {
+                && e.player.tickCount % EVENT_TICKS == 0) {
 
             var mainHandItem = player.getMainHandItem();
             var offHandItem = player.getOffhandItem();
 
-            if(mainHandItem.getItem() == MetalDetectors.SIMPLE_METAL_DETECTOR.get()
-            || offHandItem.getItem() == MetalDetectors.SIMPLE_METAL_DETECTOR.get()) {
+            if(mainHandItem.getItem() == SIMPLE_METAL_DETECTOR
+            || offHandItem.getItem() == SIMPLE_METAL_DETECTOR) {
                 checkSurroundingBlocks(level, player, 10);
             }
         }
