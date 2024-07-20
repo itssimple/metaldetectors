@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "III",
+        "RXR",
+        "III"
+    ],
+    "key": {
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "X": {
+            "item": "minecraft:coal_block"
+        }
+    },
+    "result": {
+        "item": "metaldetectors:simple_metal_detector",
+        "count": 1
+    }
+}
