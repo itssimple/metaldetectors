@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+    "textures": {
+        "layer0": "metaldetectors:item/iron_detector"
+    }
+}

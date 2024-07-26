@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SLS",
+        "LWL",
+        "SLS"
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:wheat_seeds"
+        },
+        "L": {
+            "item": "minecraft:logs_that_burn"
+        },
+        "W": {
+            "item": "minecraft:wooden_pickaxe"
+        }
+    },
+    "result": {
+        "item": "metaldetectors:wooden_detector",
+        "count": 1
+    }
+}

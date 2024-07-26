@@ -1,23 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
     "pattern": [
-        "III",
+        "NRN",
         "RXR",
-        "III"
+        "NRN"
     ],
     "key": {
-        "I": {
-            "item": "minecraft:iron_ingot"
+        "N": {
+            "item": "minecraft:gold_nugget"
         },
         "R": {
             "item": "minecraft:redstone"
         },
         "X": {
-            "item": "minecraft:coal_block"
+            "item": "minecraft:gold_pickaxe"
         }
     },
     "result": {
-        "item": "metaldetectors:simple_metal_detector",
+        "item": "metaldetectors:gold_detector",
         "count": 1
     }
 }

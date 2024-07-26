@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "NIN",
+        "RXR",
+        "NIN"
+    ],
+    "key": {
+        "N": {
+            "item": "minecraft:netherite_scrap"
+        },
+        "I": {
+            "item": "minecraft:netherite_ingot"
+        },
+        "X": {
+            "item": "metaldetectors:wooden_detector"
+        }
+    },
+    "result": {
+        "item": "metaldetectors:netherite_detector",
+        "count": 1
+    }
+}

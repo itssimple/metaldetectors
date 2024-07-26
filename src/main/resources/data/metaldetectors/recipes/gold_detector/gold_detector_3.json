@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "NRN",
+        "RXR",
+        "NRN"
+    ],
+    "key": {
+        "N": {
+            "item": "minecraft:gold_nugget"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "X": {
+            "item": "metaldetectors:stone_detector"
+        }
+    },
+    "result": {
+        "item": "metaldetectors:gold_detector",
+        "count": 1
+    }
+}

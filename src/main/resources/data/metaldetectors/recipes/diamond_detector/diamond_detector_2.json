@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DID",
+    "IXI",
+    "DID"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "X": {
+      "item": "metaldetectors:wooden_detector"
+    }
+  },
+  "result": {
+    "item": "metaldetectors:diamond_detector",
+    "count": 1
+  }
+}

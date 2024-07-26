@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "NIN",
+        "IXI",
+        "NIN"
+    ],
+    "key": {
+        "N": {
+            "item": "minecraft:iron_nugget"
+        },
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "X": {
+            "item": "minecraft:iron_pickaxe"
+        }
+    },
+    "result": {
+        "item": "metaldetectors:iron_detector",
+        "count": 1
+    }
+}

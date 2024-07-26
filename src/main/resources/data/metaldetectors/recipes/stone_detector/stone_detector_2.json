@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "DSD",
+        "SXS",
+        "DSD"
+    ],
+    "key": {
+        "D": {
+            "item": "minecraft:dirt"
+        },
+        "S": {
+            "item": "minecraft:cobblestone"
+        },
+        "X": {
+            "item": "metaldetectors:wodden_detector"
+        }
+    },
+    "result": {
+        "item": "metaldetectors:stone_detector",
+        "count": 1
+    }
+}
