@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CLC",
+    " H ",
+    "   "
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:lantern"
+    },
+    "C": {
+      "item": "minecraft:coal"
+    },
+    "H": {
+      "item": "minecraft:iron_helmet"
+    }
+  },
+  "result": {
+    "item": "metaldetectors:miners_helmet",
+    "count": 1
+  }
+}

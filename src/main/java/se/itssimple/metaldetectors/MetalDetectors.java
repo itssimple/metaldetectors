@@ -1,5 +1,7 @@
 package se.itssimple.metaldetectors;
 
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.MinecraftForge;
@@ -48,6 +50,10 @@ public class MetalDetectors
             new NetheriteDetector(new Item.Properties()
                     .stacksTo(1)));
 
+    public static final RegistryObject<Item> MINERS_HELMET = ITEMS.register("miners_helmet", () ->
+            new MinersHelmet(ArmorMaterials.IRON, ArmorItem.Type.HELMET, new Item.Properties()
+                    .stacksTo(1)));
+
     public MetalDetectors()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -59,6 +65,7 @@ public class MetalDetectors
     private void loadComplete(final FMLLoadCompleteEvent event)
     {
         MinecraftForge.EVENT_BUS.register(new se.itssimple.metaldetectors.events.MetalDetectorEvent());
+        MinecraftForge.EVENT_BUS.register(new se.itssimple.metaldetectors.events.MinersHelmetEvent());
     }
 
     @SubscribeEvent
@@ -70,6 +77,10 @@ public class MetalDetectors
             event.accept(GOLD_DETECTOR);
             event.accept(DIAMOND_DETECTOR);
             event.accept(NETHERITE_DETECTOR);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(MINERS_HELMET);
         }
     }
 }

@@ -18,7 +18,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import se.itssimple.metaldetectors.MetalDetectors;
-import se.itssimple.metaldetectors.items.WoodenDetector;
 
 import java.util.*;
 import java.util.stream.Collectors;
