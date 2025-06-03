@@ -1,10 +1,10 @@
 {
-  "item.metaldetectors.wooden_detector": "Dowsing Rods",
-  "item.metaldetectors.stone_detector": "Seeker's Stone",
-  "item.metaldetectors.iron_detector": "Metal Detector",
-  "item.metaldetectors.gold_detector": "Auric Compass",
-  "item.metaldetectors.diamond_detector": "Gem Finder",
-  "item.metaldetectors.netherite_detector": "Netherite Locator",
-  "item.metaldetectors.miners_helmet": "Miner's Helmet",
-  "item.metaldetectors.ore_compass": "Ore Compass"
+    "item.metaldetectors.wooden_detector": "Dowsing Rods",
+    "item.metaldetectors.stone_detector": "Seeker's Stone",
+    "item.metaldetectors.iron_detector": "Metal Detector",
+    "item.metaldetectors.gold_detector": "Auric Compass",
+    "item.metaldetectors.diamond_detector": "Gem Finder",
+    "item.metaldetectors.netherite_detector": "Netherite Locator",
+    "item.metaldetectors.miners_helmet": "Miner's Helmet",
+    "item.metaldetectors.ore_compass": "Ore Compass"
 }
