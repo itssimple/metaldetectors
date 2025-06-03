@@ -54,6 +54,10 @@ public class MetalDetectors
             new MinersHelmet(ArmorMaterials.IRON, ArmorItem.Type.HELMET, new Item.Properties()
                     .stacksTo(1)));
 
+    public static final RegistryObject<Item> ORE_COMPASS = ITEMS.register("ore_compass", () ->
+            new OreCompass(new Item.Properties()
+                    .stacksTo(1)));
+
     public MetalDetectors()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -77,6 +81,7 @@ public class MetalDetectors
             event.accept(GOLD_DETECTOR);
             event.accept(DIAMOND_DETECTOR);
             event.accept(NETHERITE_DETECTOR);
+            event.accept(ORE_COMPASS);
         }
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
